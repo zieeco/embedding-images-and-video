@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Embedding Images and Video</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="header-container">
+    <div class="left-div">
+      <svg viewBox="0 0 100 60" width="20" height="20" style="padding: 8px; margin: 3px 16px 0px 0px; cursor: pointer">
+        <rect width="100" height="8" rx="4"></rect>
+        <rect y="25" width="100" height="8" rx="4"></rect>
+        <rect y="50" width="100" height="8" rx="4"></rect>
+      </svg>
+
+      <div class="content" title="YouTube">
+        <svg viewBox="0 0 200 60" width="85" height="24" style="margin-top: 8px; cursor: pointer">
+          <g viewBox="0 0 200 60" width="85" height="24">
+            <g>
+              <path fill="#FF0000"
+                d="M63,14.87c-0.72-2.7-2.85-4.83-5.56-5.56C52.54,8,32.88,8,32.88,8S13.23,8,8.32,9.31 c-2.7,0.72-4.83,2.85-5.56,5.56C1.45,19.77,1.45,30,1.45,30s0,10.23,1.31,15.13c0.72,2.7,2.85,4.83,5.56,5.56 C13.23,52,32.88,52,32.88,52s19.66,0,24.56-1.31c2.7-0.72,4.83-2.85,5.56-5.56C64.31,40.23,64.31,30,64.31,30 S64.31,19.77,63,14.87z" />
+              <polygon fill="#FFFFFF" points="26.6,39.43 42.93,30 26.6,20.57" />
+            </g>
+            <path
+              d="M92.69,48.03c-1.24-0.84-2.13-2.14-2.65-3.91c-0.52-1.77-0.79-4.12-0.79-7.06v-4 c0-2.97,0.3-5.35,0.9-7.15c0.6-1.8,1.54-3.11,2.81-3.93c1.27-0.82,2.94-1.24,5.01-1.24c2.04,0,3.67,0.42,4.9,1.26 c1.23,0.84,2.13,2.15,2.7,3.93c0.57,1.78,0.85,4.16,0.85,7.12v4c0,2.94-0.28,5.3-0.83,7.08c-0.55,1.78-1.45,3.09-2.7,3.91 c-1.24,0.82-2.93,1.24-5.06,1.24C95.65,49.29,93.93,48.87,92.69,48.03z M99.66,43.71c0.34-0.9,0.52-2.37,0.52-4.4v-8.59 c0-1.98-0.17-3.42-0.52-4.34c-0.34-0.91-0.95-1.37-1.82-1.37c-0.84,0-1.43,0.46-1.78,1.37c-0.34,0.91-0.52,2.36-0.52,4.34v8.59 c0,2.04,0.16,3.51,0.49,4.4c0.33,0.9,0.93,1.35,1.8,1.35C98.71,45.06,99.31,44.61,99.66,43.71z" />
+            <path
+              d="M188.16,37.13v1.39c0,1.77,0.05,3.09,0.16,3.98c0.1,0.88,0.32,1.53,0.65,1.93 c0.33,0.4,0.84,0.61,1.53,0.61c0.93,0,1.57-0.36,1.91-1.08c0.34-0.72,0.53-1.92,0.56-3.6l5.35,0.31 c0.03,0.24,0.04,0.57,0.04,0.99c0,2.55-0.7,4.45-2.09,5.71c-1.39,1.26-3.36,1.89-5.91,1.89c-3.06,0-5.2-0.96-6.43-2.88 c-1.23-1.92-1.84-4.88-1.84-8.9v-4.81c0-4.14,0.64-7.15,1.91-9.06c1.27-1.9,3.45-2.85,6.54-2.85c2.13,0,3.76,0.39,4.9,1.17 c1.14,0.78,1.94,1.99,2.41,3.64c0.46,1.65,0.7,3.93,0.7,6.83v4.72H188.16z M188.95,25.53c-0.31,0.39-0.52,1.03-0.63,1.91 c-0.11,0.88-0.16,2.23-0.16,4.02v1.98h4.54v-1.98c0-1.77-0.06-3.11-0.18-4.02c-0.12-0.91-0.34-1.56-0.65-1.93 c-0.31-0.37-0.8-0.56-1.46-0.56C189.75,24.94,189.26,25.14,188.95,25.53z" />
+            <path
+              d="M77.59,36.61l-7.06-25.49h6.16l2.47,11.55c0.63,2.85,1.09,5.27,1.39,7.28h0.18 c0.21-1.44,0.67-3.85,1.39-7.24l2.56-11.6h6.16L83.7,36.61v12.23h-6.11V36.61z" />
+            <path
+              d="M126.45,21.28v27.55h-4.85l-0.54-3.37h-0.13c-1.32,2.55-3.3,3.82-5.93,3.82c-1.83,0-3.18-0.6-4.05-1.8 c-0.87-1.2-1.3-3.07-1.3-5.62V21.28h6.2v20.23c0,1.23,0.13,2.11,0.4,2.63c0.27,0.52,0.72,0.79,1.35,0.79 c0.54,0,1.06-0.16,1.55-0.49c0.49-0.33,0.86-0.75,1.1-1.26V21.28H126.45z" />
+            <path
+              d="M158.27,21.28v27.55h-4.85l-0.54-3.37h-0.13c-1.32,2.55-3.3,3.82-5.93,3.82c-1.83,0-3.18-0.6-4.05-1.8 c-0.87-1.2-1.3-3.07-1.3-5.62V21.28h6.2v20.23c0,1.23,0.13,2.11,0.4,2.63c0.27,0.52,0.72,0.79,1.35,0.79 c0.54,0,1.06-0.16,1.55-0.49c0.49-0.33,0.86-0.75,1.1-1.26V21.28H158.27z" />
+            <path d="M143.31,16.11h-6.16v32.72h-6.07V16.11h-6.16v-4.99h18.38V16.11z" />
+            <path
+              d="M178.8,25.69c-0.38-1.74-0.98-3-1.82-3.78c-0.84-0.78-1.99-1.17-3.46-1.17c-1.14,0-2.2,0.32-3.19,0.97 c-0.99,0.64-1.75,1.49-2.29,2.54h-0.05l0-14.52h-5.98v39.11h5.12l0.63-2.61h0.13c0.48,0.93,1.2,1.66,2.16,2.2 c0.96,0.54,2.02,0.81,3.19,0.81c2.1,0,3.64-0.97,4.63-2.9c0.99-1.93,1.48-4.95,1.48-9.06v-4.36 C179.36,29.84,179.17,27.43,178.8,25.69z M173.11,36.93c0,2.01-0.08,3.58-0.25,4.72c-0.16,1.14-0.44,1.95-0.83,2.43 c-0.39,0.48-0.91,0.72-1.57,0.72c-0.51,0-0.98-0.12-1.42-0.36c-0.43-0.24-0.79-0.6-1.06-1.08V27.71 c0.21-0.75,0.57-1.36,1.08-1.84c0.51-0.48,1.06-0.72,1.66-0.72c0.63,0,1.12,0.25,1.46,0.74c0.34,0.49,0.58,1.33,0.72,2.49 c0.13,1.17,0.2,2.83,0.2,4.99V36.93z" />
+          </g>
+        </svg>
+        <span id="country-code">NG</span>
+      </div>
+    </div>
+
+    <div id="searchBar-div">
+      <form id="search-form" action="#">
+        <input id="search-input" type="text" name="" placeholder="Search">
+      </form>
+      <button class="searchButton" title="search">
+        <svg class="search-icon" viewBox="0 0 19.9 19.7">
+          <g class="search-path" fill="none" stroke="#848F91">
+            <path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4" />
+            <circle cx="8" cy="8" r="7" />
+          </g>
+        </svg>
+      </button>
+    </div>
+
+    <div class="microphone-div" title="search with your voice">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <g transform="translate(0,-42.626649)">
+          <g transform="translate(-133.43582,-90.627137)">
+            <rect
+              style="fill:#969696;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+              id="rect1265" width="5.8208332" height="13.809904" x="136.03062" y="-147.06369" transform="scale(1,-1)"
+              ry="2.8327479" />
+            <path id="rect1267" style="fill:#969696"
+              d="m 133.43582,142.09827 v 2.28748 c 0,3.56451 2.47756,6.47021 5.52319,6.47021 3.04561,0 5.50797,-2.9057 5.50797,-6.47021 v -2.28748 h -1.28437 v 2.28748 c 0,2.74821 -1.87549,4.94326 -4.2236,4.94326 -2.34813,0 -4.21857,-2.19505 -4.21857,-4.94326 v -2.28748 z" />
+            <path style="stroke:#969696" d="m 138.76656,153.93538 c 0,-3.04993 0,-3.175 0,-3.175" />
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    <div id="right-div">
+      <div class="right-div-icons" title="Create">
+        <svg class="video-icon" viewBox="0 0 507.99999 285.75001">
+          <g id="g917" transform="matrix(11.570312,0,0,13.521862,-1251.967,-628.28974)">
+            <path id="rect833" d="m 108.47239,46.441359 h 29.1042 v 21.166666 h -29.1042 z" style="fill:#606060" />
+            <path d="M 137.28983,52.864382 152.0248,46.244767 152.094,67.411434 137.3169,60.63028 Z" id="rect837"
+              style="fill:#606060" />
+          </g>
+          <g id="g81" transform="matrix(10.045268,0,0,9.8294009,-674.22778,-414.09753)">
+            <g id="g85">
+              <rect style="fill:#ffffff;stroke-width:0.242249" id="rect904" width="4.7624998" height="21.166666"
+                x="-86.247337" y="-67.608025" ry="0" transform="scale(-1)" />
+              <rect style="fill:#ffffff;stroke-width:0.242249" id="rect906" width="4.7624998" height="21.166666"
+                x="-59.405945" y="73.282753" ry="0" transform="rotate(-90)" />
+            </g>
+          </g>
+          <rect id="rect896" width="6.2419405" height="3.7482946" x="0" y="0" />
+        </svg>
+      </div>
+
+      <div class="right-div-icons" title="YouTube apps">
+        <svg class="app-icon" viewBox="0 0 507.99998 285.75001">
+          <g id="g999">
+            <g style="fill:#969696" transform="matrix(3.1756377,0,0,3.299438,-326.84139,-429.94175)">
+              <rect style="fill:#969696" width="22.931562" height="24.943571" x="102.92149" y="130.30757" />
+              <rect style="fill:#969696" width="22.931562" height="24.943571" x="158.89413" y="130.30757" />
+              <rect style="fill:#969696" width="22.931562" height="24.943571" x="131.27774" y="130.30757" />
+              <rect style="fill:#969696" width="22.931562" height="24.943571" x="158.89413" y="161.41545" />
+              <rect style="fill:#969696" width="22.931562" height="24.943571" x="131.52432" y="161.7373" />
+              <rect style="fill:#969696" width="22.931562" height="24.943571" x="102.92149" y="162.05916" />
+              <rect style="fill:#969696" width="22.931562" height="24.943571" x="131.52432" y="193.16675" />
+              <rect style="fill:#969696" width="22.931562" height="24.943571" x="103.16806" y="193.32768" />
+              <rect style="fill:#969696" width="22.931562" height="24.943571" x="159.1407" y="193.16675" />
+            </g>
+          </g>
+        </svg>
+      </div>
+
+      <div class="right-div-icons" title="Notifications">
+        <svg class="notification-icon" viewBox="0 0 8 8">
+          <g id="g148" transform="matrix(2.6954385,0,0,2.082373,-6.7504714,-6.0925678)">
+            <path id="path885" style="fill:#606060"
+              d="m 15.992188,11.703125 c -0.831001,0 -1.500001,0.669 -1.5,1.5 v 0.716797 c -1.581159,0.515789 -2.708026,1.836046 -2.71875,3.404297 h -0.0039 v 3.580078 c 0,0.02229 0.01127,0.04012 0.02344,0.05664 h -0.02734 c 2.69e-4,0.0098 0.0098,0.01555 0.0098,0.02539 0,0.536153 -0.40684,0.959758 -0.925782,1.023438 0.0068,4.08e-4 0.0132,0.002 0.01953,0.0039 -0.479717,0.0742 -0.851563,0.469561 -0.851563,0.970703 0,0.553999 0.446,1 1,1 h 10 c 0.554,0 1,-0.446001 1,-1 0,-0.522171 -0.400733,-0.935171 -0.910156,-0.982422 0.0077,-0.0018 0.01546,-0.0029 0.02344,-0.0039 -0.557562,-0.02268 -1.004286,-0.474847 -1.007812,-1.037109 h -0.02344 c 0.01216,-0.01652 0.02344,-0.03435 0.02344,-0.05664 v -3.576172 h 0.002 c -0.0087,-1.540187 -1.095579,-2.848135 -2.632812,-3.384766 v -0.740234 c 0,-0.831 -0.669001,-1.5 -1.5,-1.5 z m -2.091797,13.28125 a 1.9999952,1.9922168 0 0 0 0,0.0078 1.9999952,1.9922168 0 0 0 2,1.992187 1.9999952,1.9922168 0 0 0 2,-1.992187 1.9999952,1.9922168 0 0 0 0,-0.0078 z"
+              transform="scale(0.25)" />
+          </g>
+          <g id="path903" transform="matrix(1.0500008,0,0,1.0500017,-0.12171226,-1.3003847)" />
+          <g id="ellipse909" transform="matrix(1.0500008,0,0,1.0500015,-0.02812465,-0.80029458)" />
+        </svg>
+      </div>
+
+      <div class="right-div-icons">
+        <button class="sign-in">I</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="main-div">
+    <div class="embededVideo-container">
+      <div class="embededVideo-div">
+        <iframe class="embededVideo" src="https://www.youtube.com/embed/UO4ctV1KIq4" title="youTube video image player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <div id="video-details">
+        <span class="check-in">Applicant Check In</span><br>
+        <div class="badge-container">
+          <svg class="badge-icon-svg" viewBox="0 0 24 9" width="100%" height="100%">
+            <g transform="matrix(0.88620148,0,0,1.9399889,-4.8378067,-17.07384)" style="fill:#606060">
+              <path style="fill:#606060"
+                d="M 8.5957031,11.828125 C 8.2754873,11.827996 7.9841936,11.914363 7.7675781,12.0625 7.5509627,12.210637 7.40625,12.430014 7.40625,12.675781 c 0,0.245768 0.1447127,0.461064 0.3613281,0.609375 0.2166155,0.148312 0.5079092,0.2362 0.828125,0.236328 h 2.5214849 v -0.199218 l -2.5214849,-0.002 C 8.3122125,13.320246 8.0581788,13.2425 7.8808594,13.121094 7.7035401,12.999688 7.6074219,12.843115 7.6074219,12.675781 c 0,-0.167333 0.096118,-0.324049 0.2734375,-0.445312 0.1773194,-0.121264 0.4313531,-0.201286 0.7148437,-0.201172 h 2.5214849 v -0.199219 z m 2.7714849,0.002 v 0.201172 h 2.470703 c 0.28349,1.14e-4 0.539477,0.07977 0.716797,0.201172 0.177317,0.121406 0.273437,0.277979 0.273437,0.445312 0,0.167334 -0.09612,0.324049 -0.273437,0.445313 -0.17732,0.121264 -0.433307,0.201286 -0.716797,0.201172 l -2.470703,-0.002 v 0.201172 h 2.470703 c 0.320216,1.28e-4 0.611509,-0.08819 0.828125,-0.236329 0.216616,-0.148137 0.363281,-0.363607 0.363281,-0.609375 0,-0.245767 -0.146665,-0.463017 -0.363281,-0.611328 C 14.4494,11.918095 14.158107,11.83216 13.837891,11.832031 Z M 9.75,12.613281 c -0.60386,0 -1.0898438,0.04421 -1.0898438,0.09961 0,0.0554 0.4859838,0.09961 1.0898438,0.09961 h 2.898438 c 0.603858,0 1.089843,-0.04421 1.089843,-0.09961 0,-0.0554 -0.485985,-0.09961 -1.089843,-0.09961 z"
+                transform="matrix(3.5526316,0,0,2.7364864,-20.852641,-23.566504)" />
+            </g>
+          </svg>
+          <span class="unlisted">Unlisted</span>
+        </div>
+        <div id="video-result">
+          <div class="video-views-count">66 views &middot; Aug 21, 2020</div>
+          <div id="viewers-reaction">
+            <div class="thumbsUP-thumbsDOWN-share-save-moreOptions" title="I like this">
+              <button class="thumbButton">
+                <svg height="24px" viewBox="0 0 24 24" width="24px">
+                  <g id="g909" transform="rotate(-90,11,12)">
+                    <path id="path82" style="fill:#909090;fill-opacity:1;stroke:none"
+                      d="m 2,19 c 0,0.83 0.5007031,1.539844 1.2207031,1.839844 l 7.0488279,3.019531 C 10.499531,23.949375 10.74,24 11,24 h 2 c 1.1,0 2,-0.9 2,-2 v -6.310547 l 4.570312,0.951172 0.320313,0.0293 c 0.41,0 0.788594,-0.169453 1.058594,-0.439453 L 22,15.169922 15.410156,8.580078 C 15.050156,8.220078 14.55,8 14,8 H 4 C 2.9,8 2,8.9 2,10 Z M 2,6 H 14 V 2 H 2 Z" />
+                  </g>
+                </svg>
+              </button>
+            </div>
+            <div class="outcome" title="I like this">0</div>
+            <div class="thumbsUP-thumbsDOWN-share-save-moreOptions" title="I dislike this">
+              <button class="thumbButton">
+                <svg viewBox="0 0 24 24" width="24px" height="24px">
+                  <g id="g918" transform="rotate(90,11.8065,13.1935)">
+                    <path id="path916" style="fill:#909090"
+                      d="m 2,19 c 0,0.83 0.5007031,1.539844 1.2207031,1.839844 l 7.0488279,3.019531 C 10.499531,23.949375 10.74,24 11,24 h 2 c 1.1,0 2,-0.9 2,-2 v -6.310547 l 4.570312,0.951172 0.320313,0.0293 c 0.41,0 0.788594,-0.169453 1.058594,-0.439453 L 22,15.169922 15.410156,8.580078 C 15.050156,8.220078 14.55,8 14,8 H 4 C 2.9,8 2,8.9 2,10 Z M 2,6 H 14 V 2 H 2 Z" />
+                  </g>
+                </svg>
+              </button>
+            </div>
+            <div class="outcome" title="I dislike this">0</div>
+            <div class="thumbsUP-thumbsDOWN-share-save-moreOptions" title="Share">
+              <svg viewBox="0 0 24 24" width="24px" height="24px">
+                <path d="M 14,9 V 5 l 7,7 -7,7 V 14.9 C 9,14.9 5.5,16.5 3,20 4,15 7,10 14,9 Z" style="fill:#909090" />
+              </svg>
+            </div>
+            <div class="outcome" title="Share">SHARE</div>
+            <div class="thumbsUP-thumbsDOWN-share-save-moreOptions" title="Save">
+              <svg viewBox="0 0 24 24" width="24" height="24">
+                <g class="style-scope yt-icon">
+                  <path style="fill:#909090"
+                    d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z">
+                  </path>
+                </g>
+              </svg>
+            </div>
+            <div class="outcome" title="Save">SAVE</div>
+            <div class="thumbsUP-thumbsDOWN-share-save-moreOptions">
+              <svg viewBox="0 0 24 24" width="24px" height="24px">
+                <g style="fill:#909090">
+                  <circle cx="5" cy="12" r="2"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+                  <circle cx="19" cy="12" r="2"></circle>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="yt-userDiv">
+        <div class="userAccount">
+          <button class="user">I</button>
+        </div>
+        <div class="user-name-container">
+          <div class="user-name">Isaac Imaobong Samuel</div>
+        </div>
+        <div class="analytic-div">
+          <button class="analytic-edit">ANALYTICS</button>
+        </div>
+        <div class="edit-div">
+          <button class="analytic-edit">EDIT VIDEO</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="sidebar-div">
+      <div class="image-video-container">
+        <div class="image-div">
+          <a href="#"><img class="image"
+              src="https://i.ytimg.com/an_webp/3bpjEpCFnDw/mqdefault_6s.webp?du=3000&sqp=CJyuwIQG&rs=AOn4CLDePNO8hKMpnyh1pNXkjXdd8Y08qg"
+              alt="youTube video image"></a>
+        </div>
+        <div class="video-title" title="TOP 5 Best Cover 'Chandelier' by Sia around The World">TOP 5 Best Cover
+          'Chandelier'<br> by Sia around The World
+        </div>
+        <div class="channel" title="Top 10 Talent">Top 10 Talent</div>
+        <div class="channel-views">14M views &middot; 1 year ago</div>
+      </div>
+
+      <div class="image-video-container">
+        <div class="image-div">
+          <a href="#"><img class="image"
+              src="https://i.ytimg.com/an_webp/e3FfL46OzYI/mqdefault_6s.webp?du=3000&sqp=CPaAv4QG&rs=AOn4CLAcr4xhYQcrX3ms9xq42Q75XQ9lHA"
+              alt="youTube video image"></a>
+        </div>
+        <div class="video-title" title="Denzel Washington's Life Advice Will Leave You Speechless (MUST WATCH)
+        ">Denzel Washington's Life Advice<br> Will Leave You Speechles...
+        </div>
+        <div class="channel" title="Motivation Madness">Motivation Madness</div>
+        <div class="channel-views">4.1M views &middot; 5 months ago</div>
+      </div>
+
+      <div class="image-video-container">
+        <div class="image-div">
+          <a href="#"><img class="image"
+              src="https://i.ytimg.com/an_webp/W93Rn3W5yZM/mqdefault_6s.webp?du=3000&sqp=CM29wIQG&rs=AOn4CLB9WOGAuBZmkWbdJ_GIRUTSJmPaqw"
+              alt="youTube video image"></a>
+        </div>
+        <div class="video-title"
+          title="Shallow (Lady Gaga And Bradley Cooper from A Star is Boon)-7-year-Old Claire Crossby and Dad Cover">
+          Shallow (Lady Gaga And Bradley<br> Cooper from A Star Is Born)</div>
+        <div class="channel" title="The Crossbys">The Crossbys</div>
+        <div class="channel-views">21M views &middot; 11 months ago</div>
+      </div>
+
+      <div class="image-video-container">
+        <div class="image-div">
+          <a href="#"><img class="image"
+              src="https://i.ytimg.com/an_webp/wGgsmCEgf4w/mqdefault_6s.webp?du=3000&sqp=CMTAwIQG&rs=AOn4CLDufHN5qpbrPVVl-8jEofTLz4rd_Q"
+              alt="youTube video image"></a>
+        </div>
+        <div class="video-title" title="Tori Kelly - Psalm 42 (Live)">Tori Kelly - Psalm 42 (Live)</div>
+        <div class="channel" title="Tori Kelly">Tori Kelly</div>
+        <div class="channel-views">10M views &middot; 2 years ago</div>
+      </div>
+
+      <div class="image-video-container">
+        <div class="image-div">
+          <a href="#"><img class="image"
+              src="https://i.ytimg.com/vi/T5ZlSSOhbzQ/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCE1GtvJ71DA7wgpdS9YMPDCNaloQ"
+              alt="youTube video image"></a>
+        </div>
+        <div class="video-title" title="Christian Sister Accept Islam After She Got Her 2 Answers-Dr. Zakir Naik">
+          Christian Sister Accept Islam<br> After She Got Her 2 Answers - ...</div>
+        <div class="channel" title="ask4gain">ask4gain</div>
+        <div class="channel-views">5.7M views &middot; 4 years ago</div>
+      </div>
+
+      <div class="image-video-container">
+        <div class="image-div">
+          <a href="#"><img class="image"
+              src="https://i.ytimg.com/an_webp/40uBqG0yhJg/mqdefault_6s.webp?du=3000&sqp=CKjQwIQG&rs=AOn4CLD2QFKCj36gcQv5_GZS4isVS0j1_w"
+              alt="youTube video image"></a>
+        </div>
+        <div class="video-title" title="Do You Need To Know Math To Be A Programmer?">Do You Need To Know Math To<br> Be
+          A Programmer?</div>
+        <div class="channel" title="Web Dev Simplified">Web Dev Simplified</div>
+        <div class="channel-views">13K views &middot; 4 days ago </div>
+      </div>
+
+      <div class="image-video-container">
+        <div class="image-div">
+          <a href="#"><img class="image"
+              src="https://i.ytimg.com/an_webp/EsJs_eNJn6U/mqdefault_6s.webp?du=3000&sqp=CPTEwIQG&rs=AOn4CLAWi9Wf-CLCfY46RyCg94SoAl7tTg"
+              alt="youTube video image"></a>
+        </div>
+        <div class="video-title" title="SINACH ft. Nolly | OMEMMA-Official Video">SINACH ft. Nolly | OMEMMA-<br>
+          Official Video</div>
+        <div class="channel" title="SINACH">SINACH</div>
+        <div class="channel-views">8.7M views &middot; 1 year ago</div>
+      </div>
+
+      <div class="image-video-container">
+        <div class="image-div">
+          <a href="#"><img class="image"
+              src="https://i.ytimg.com/an_webp/7cBkkulndz4/mqdefault_6s.webp?du=3000&sqp=CJS-wIQG&rs=AOn4CLAol8kxAErjXv3E-KYWx1JxXqEljQ"
+              alt="youTube video image"></a>
+        </div>
+        <div class="video-title" title="How To Find Your Natural<br> Singing Voice - 5 Easy Steps">How To Find Your
+          Natural<br> Singing Voice - 5 Easy Steps</div>
+        <div class="channel" title="Ramsey Voice Studio">Ramsey Voice Studio</div>
+        <div class="channel-views">904K views &middot; 9 months ago</div>
+      </div>
+
+      <div class="image-video-container">
+        <div class="image-div">
+          <a href="#"><img class="image"
+              src="https://i.ytimg.com/an_webp/8KU5keZlQ6k/mqdefault_6s.webp?du=3000&sqp=CKm5wIQG&rs=AOn4CLD2Ty_7fgTIRNefc0_gdcb52LH4xw"
+              alt="youTube video image"></a>
+        </div>
+        <div class="video-title" title="The Bass Walk: Abraham Laboriel">The Bass Walk: Abraham <br> Laboriel</div>
+        <div class="channel" title="Boyd Matson">Boyd Matson</div>
+        <div class="channel-views">10M views &middot; 3 years ago</div>
+      </div>
+
+      <div class="image-video-container">
+        <div class="image-div">
+          <a href="#"><img class="image"
+              src="https://i.ytimg.com/an_webp/FqJdzYY_Fas/mqdefault_6s.webp?du=3000&sqp=CJLSwIQG&rs=AOn4CLASjbL47ZeyBKOs3Nx2p0pYOfKPJQ"
+              alt="youTube video image"></a>
+        </div>
+        <div class="video-title" title="Best Drummer Ever [HD]">Best Drummer Ever [HD]</div>
+        <div class="channel" title="William Wei">William Wei</div>
+        <div class="channel-views">179M views &middot; 7 years ago</div>
+      </div>
+
+      <div class="image-video-container">
+        <div class="image-div">
+          <a href="#"><img class="image"
+              src="https://i.ytimg.com/an_webp/qKiz9gdJdr8/mqdefault_6s.webp?du=3000&sqp=CL_QwIQG&rs=AOn4CLAa89TUx5NwzkP0sbi3cZr4kpAP0A"
+              alt="youTube video image"></a>
+        </div>
+        <div class="video-title" title="The most INFURIATING thing about CSS and how to deal with it!">The most
+          INFURIATING thing<br> about CSS and how to deal with it!
+        </div>
+        <div class="channel" title="Kevin Powell">Kevin Powell</div>
+        <div class="channel-views">24K views &middot; 1 week ago</div>
+      </div>
+
+      <div class="image-video-container">
+        <div class="image-div">
+          <a href="#"><img class="image"
+              src="https://i.ytimg.com/an_webp/5aYKRa4ssrk/mqdefault_6s.webp?du=3000&sqp=COnLwIQG&rs=AOn4CLDIpCKIGUVytBqYbwWV7YOMmiUDyQ"
+              alt="youTube video image"></a>
+        </div>
+        <div class="video-title" title="only 0.00000000000001% can play this">only 0.00000000000001% can<br> play this
+        </div>
+        <div class="channel" title="Davie504">Davie504</div>
+        <div class="channel-views">860K views &middot; 1 month ago</div>
+      </div>
+
+      <div class="image-video-container">
+        <div class="image-div">
+          <a href="#"><img class="image"
+              src="https://i.ytimg.com/vi/z23HJuLdmUI/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDylQR5OCdk-6LbBRJ9Xq3hrpOhIg"
+              alt="youTube video image"></a>
+        </div>
+        <div class="video-title" title="I LIVED IN MY CAR FOR 3 YEARS | STEVE HARVEY | MOTIVATIONAL SPEECH">I LIVED IN
+          MY CAR FOR 3 YEARS | STEVE HARVEY | ...</div>
+        <div class="channel" title="Motivation King">Motivation King</div>
+        <div class="channel-views">1.2M views &middot; 1 year ago</div>
+      </div>
+
+      <div class="image-video-container">
+        <div class="image-div">
+          <a href="#"><img class="image"
+              src="https://i.ytimg.com/an_webp/VSceuiPBpxY/mqdefault_6s.webp?du=3000&sqp=CLi1wIQG&rs=AOn4CLBeB4EqB-iM0lVyhvBcPC8tQ9KFiw"
+              alt="youTube video image"></a>
+        </div>
+        <div class="video-title" title="THE MINDSET OF A WINNER | Kobe Bryant Champions Advice">THE MINDSET OF A WINNER
+          | Kobe Bryant Champions Advice</div>
+        <div class="channel" title="Motiversity">Motiversity</div>
+        <div class="channel-views">10M views &middot; 1 year ago</div>
+      </div>
+
+      <div class="image-video-container">
+        <div class="image-div">
+          <a href="#"><img class="image"
+              src="https://i.ytimg.com/an_webp/bX8hvldRx1M/mqdefault_6s.webp?du=3000&sqp=CNSqwIQG&rs=AOn4CLDoE2bnb-m5JQMvyWv9X9KGyF_tiQ"
+              alt="youTube video image"></a>
+        </div>
+        <div class="video-title" title="Day in the Life of a Software Engineer (First Week)">Day in the Life of a
+          Software Engineer(First Week)</div>
+        <div class="channel" title="Senegoddess">Senegoddess</div>
+        <div class="channel-views">517K views &middot; 1 year ago</div>
+      </div>
+
+
+    </div>
+  </div>
+</body>
+
+</html>

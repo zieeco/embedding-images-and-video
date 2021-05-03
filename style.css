@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #F9F9F9;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+}
+
+#header-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 1319px;
+  height: 56px;
+  padding: 0 16px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+.left-div {
+  width: 185px;
+  height: 40px;
+  display: flex;
+}
+
+.content {
+  display: flex;
+}
+
+#country-code {
+  margin: 8px 0px 0px 0px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  color: #606060;
+}
+
+#searchBar-div {
+  display: flex;
+  align-items: center;
+  margin-left: 130px;
+  width: 640px;
+  height: 30px;
+  border: 2px solid #f2f2f2;
+  border-radius: 3px;
+}
+
+#search-input {
+  width: 564px;
+  height: 26px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  box-shadow: none;
+}
+
+[placeholder="Search"] {
+  padding: 1px 2px 1px 10px;
+}
+
+.searchButton {
+  width: 64px;
+  height: 30px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.microphone-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 20px;
+  cursor: pointer;
+}
+
+#right-div {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.right-div-icons {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin: 0 8px;
+}
+
+.video-icon {
+  width: 20px;
+  height: 20px;
+  margin: 5px 0 0 5px;
+  cursor: pointer;
+}
+
+.app-icon {
+  width: 28px;
+  height: 28px;
+  margin: 1px 0 0 6px;
+  cursor: pointer;
+}
+
+.notification-icon {
+  width: 20px;
+  height: 20px;
+  margin: 5px 0 0 0;
+  cursor: pointer;
+}
+
+.sign-in {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #1888D1;
+  color: #D7ECF7;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+#main-div {
+  position: relative;
+  top: 56px;
+  bottom: 0;
+  width: 1350px;
+  height: 1550px;
+}
+
+.embededVideo-container {
+  position: absolute;
+  top: 0;
+  left: 104px;
+  right: 0;
+  bottom: 0;
+  margin: 0px 0px 0px 24px;
+  padding: 24px 24px 0px 0px;
+  width: 658px;
+}
+
+.embededVideo-div {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+
+.embededVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+#video-details {
+  height: 86px;
+  display: block;
+  padding: 20px 0px 8px 0px;
+  border-bottom: 1px solid #909090;
+}
+
+.check-in {
+  color: #030303;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 18px;
+}
+
+.badge-container {
+  width: 68px;
+  height: 14px;
+  border-radius: 2px;
+  background-color: #ececec;
+  padding: 2px 4px;
+}
+
+.badge-icon-svg {
+  width: 14px;
+  height: 15px;
+}
+
+.unlisted {
+  color: #606060;
+  font-size: 0.8125rem;
+  height: 16px;
+  position: absolute;
+  top: 439px;
+  left: 25px;
+  right: 610px;
+  bottom: 631px;
+}
+
+#video-result {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  margin: 13px 0px 0px 0px;
+}
+
+.video-views-count {
+  display: block;
+  font-size: 14px;
+  color: #606060;
+}
+
+#viewers-reaction {
+  width: 293px;
+  height: 31px;
+  position: absolute;
+  top: 6px;
+  bottom: -23px;
+  left: 322px;
+  right: 73px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.thumbsUP-thumbsDOWN-share-save-moreOptions {
+  width: 28px;
+  height: 31px;
+  cursor: pointer;
+}
+
+.thumbButton {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #f9f9f9;
+
+}
+
+.outcome {
+  height: 17px;
+  font-weight: 600;
+  color: #606060;
+  padding: 4px 16px 0px 8px;
+  cursor: pointer;
+}
+
+#yt-userDiv {
+  height: 50px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 0px 0px 24px 0px;
+  padding: 24px 0px 28px 0px;
+  border-bottom: 1px solid #909090;
+}
+
+.userAccount {
+  height: 48px;
+  width: 48px;
+}
+
+.user {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #1888D1;
+  color: #D7ECF7;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.user-name-container {
+  width: 358px;
+}
+
+.analytic-div,
+.edit-div {
+  width: 105px;
+  align-items: center;
+}
+
+.analytic-edit {
+  width: 105px;
+  height: 40px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  color: #fff;
+  background-color: #055FD5;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+#sidebar-div {
+  width: 411px;
+  position: absolute;
+  top: 0;
+  right: 109px;
+  bottom: 0;
+  left: 809px;
+  padding: 24px 24px 0px 0px;
+}
+
+
+.image-video-container {
+  position: relative;
+  display: block;
+  height: 92px;
+  /* border: 1px solid green; */
+  margin-bottom: 10px;
+}
+
+.image-div {
+  position: relative;
+  width: 170px;
+  height: 92px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.video-title {
+  position: absolute;
+  top: 2px;
+  right: 18px;
+  bottom: 60px;
+  left: 180px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.channel {
+  position: absolute;
+  top: 34px;
+  right: 100px;
+  bottom: 42px;
+  left: 180px;
+  color: #909090;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.channel-views {
+  position: absolute;
+  top: 50px;
+  right: 80px;
+  bottom: 28px;
+  left: 180px;
+  color: #909090;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 560px) {
+  .embededVideo-div {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+  }
+
+  .embededVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
